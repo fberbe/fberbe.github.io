@@ -132,17 +132,17 @@
 
 
   
-  &lt;div id=&#34;plotly-chart-1752629077858230800&#34;&gt;&lt;/div&gt;
+  &lt;div id=&#34;plotly-chart-1752631136860270900&#34;&gt;&lt;/div&gt;
 
   &lt;script src=&#34;https://cdn.plot.ly/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
   &lt;script&gt;
     fetch(&#39;\/post\/data-visualization\/line-chart.json&#39;)
       .then(response =&gt; response.json())
       .then(data =&gt; {
-        Plotly.newPlot(&#39;plotly-chart-1752629077858230800&#39;, data.data, data.layout || {});
+        Plotly.newPlot(&#39;plotly-chart-1752631136860270900&#39;, data.data, data.layout || {});
       })
       .catch(err =&gt; {
-        document.getElementById(&#39;plotly-chart-1752629077858230800&#39;).innerText = &#39;Failed to load chart.&#39;;
+        document.getElementById(&#39;plotly-chart-1752631136860270900&#39;).innerText = &#39;Failed to load chart.&#39;;
         console.error(err);
       });
   &lt;/script&gt;

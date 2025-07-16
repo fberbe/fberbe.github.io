@@ -458,9 +458,14 @@
         
         
         
+          
+          
+          
+          
+        
 
         <li class="nav-item">
-          <a class="nav-link " href="/teaching/"><span>Teaching</span></a>
+          <a class="nav-link " href="/#teaching"><span>Teaching</span></a>
         </li>
 
         
@@ -610,17 +615,17 @@
 
 
   
-  <div id="plotly-chart-1752629077858230800"></div>
+  <div id="plotly-chart-1752631136860270900"></div>
 
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script>
     fetch('\/post\/data-visualization\/line-chart.json')
       .then(response => response.json())
       .then(data => {
-        Plotly.newPlot('plotly-chart-1752629077858230800', data.data, data.layout || {});
+        Plotly.newPlot('plotly-chart-1752631136860270900', data.data, data.layout || {});
       })
       .catch(err => {
-        document.getElementById('plotly-chart-1752629077858230800').innerText = 'Failed to load chart.';
+        document.getElementById('plotly-chart-1752631136860270900').innerText = 'Failed to load chart.';
         console.error(err);
       });
   </script>
